@@ -1,66 +1,85 @@
+Attempting to perform the InitializeDefaultDrives operation on the 'FileSystem' provider failed.
 # thatgamejam #02
 
-A quiet-wonder game in early development for [thatgamejam #02](https://itch.io/jam/thatgamejam02).
+> A small, visual game inspired by the feeling of a piece of music.
+
+This is our in-progress entry for [thatgamejam #02](https://itch.io/jam/thatgamejam02). We are still choosing the final game idea, so this repository begins with a reliable Godot foundation and a deliberately small scope.
+
+## Current status
+
+- **Project:** Minimal Godot project is ready and shared.
+- **Platform target:** Desktop Windows or macOS build for itch.io.
+- **Display target:** 1920×1080, with Godot canvas stretching enabled.
+- **Engine:** Godot 4.7.2-stable, standard GDScript edition.
+- **Next decision:** Pick one small idea to turn into a playable test.
+
+## The brief
+
+**Theme:** “Hear it. Feel it. Turn it into play.”
+
+The jam asks us to turn the emotions, contrasts, and transformations suggested by the theme music into gameplay, interactions, or a world. It does not have to be a rhythm game.
+
+Our north star is a short, complete experience: one clear idea, one satisfying interaction, and room for the art and sound to carry the feeling.
 
 ## Start here
 
-New to game jams? You do not need to make a huge game. Our goal is a small, complete experience that turns the feeling of the theme music into something a player can do.
-
-1. Listen to the track below and write down a few feelings, images, or interactions it suggests.
-2. Share those ideas with the team. We will choose one small idea to test first.
-3. Build and play a tiny version early, then improve what feels most meaningful.
-4. Keep the project runnable and commit finished work so the team always has a safe starting point.
-
-## Jam at a glance
-
-- **Dates:** October 24–November 7, 2026 (submissions close November 7 at 23:59 PT)
-- **Theme:** “Hear it. Feel it. Turn it into play.”
-- **Prompt:** Translate the emotions, contrasts, and transformations inspired by the theme music into gameplay, interactions, and worlds. A rhythm or music game is not required.
-- **Submission:** The final entry must include a Windows or macOS build.
-
-## Official theme track
-
-Listen first, then ask: *What could a player see, touch, change, or discover that carries this feeling?*
-
-[![Watch the official thatgamejam #02 theme track on YouTube](https://img.youtube.com/vi/z71a6UtZ6GY/maxresdefault.jpg)](https://www.youtube.com/watch?v=z71a6UtZ6GY)
-
-[Watch the official theme track on YouTube](https://www.youtube.com/watch?v=z71a6UtZ6GY) · Theme music composed by Jason Grace.
-
-The supplied recording is optional. If we use it, it must remain unmodified and may be used only within this jam entry—no remixing, sampling, or rearranging.
-
-## Rules to keep in mind
-
-Read the full, current [official jam rules and FAQ](https://itch.io/jam/thatgamejam02) before we submit. The important points for our team are:
-
-- Our three-person team is within the five-member limit. The final submission roster must list every contributor.
-- Submit one game through one platform only. On itch.io, add every contributor as a game author/admin before submission.
-- The game must be a new project for this jam, use English by default, and include a Windows or macOS build.
-- We must own our work or use assets with appropriate licenses.
-- If we use any AI-generated assets, we must clearly disclose what was generated and how it was used on the game’s description page.
-- Submit before the deadline. The final jam version is locked afterward.
-
-## Working together
-
-- Keep ideas small enough to try in a day, and bring questions or concerns to the team early.
-- Check in before replacing someone else’s work; preserve source files as well as exported game assets.
-- Before the final upload, test the build on its intended platform and confirm the credits, roster, and AI disclosure (if any) are accurate.
+1. Install **Godot 4.7.2-stable** (standard/GDScript build).
+2. Clone this repository and import `project.godot` in Godot.
+3. Run the project. It currently opens an intentionally empty startup scene.
+4. Listen to the [official theme track](https://www.youtube.com/watch?v=z71a6UtZ6GY), then share one feeling, image, or small interaction it suggests.
+5. Keep changes focused, testable, and committed so the team always has a safe starting point.
 
 ## Team
 
-- **Lilith** — Writing / concept + hand-drawn art — Threads [@uanranu](https://www.threads.com/@uanranu) — itch: TBD
-- **Chris** — Code — [itch.io](https://ninjapiraterobotalien.itch.io/) — [GitHub](https://github.com/cbtechny)
-- **Packy** — Lead / producer / coordinator + animator — link: TBD
+| Person | Focus | Contact |
+| --- | --- | --- |
+| **Lilith** | Writing, concept, and hand-drawn art | Discord: `Anthropo7874` · Threads: [@uanranu](https://www.threads.com/@uanranu) |
+| **Chris** | Code and technical setup | Discord: `ninjapiraterobotalien` · [GitHub](https://github.com/cbtechny) · [itch.io](https://ninjapiraterobotalien.itch.io/) |
+| **Packy** | Producer, coordination, technical art, and animation | Discord: `Packy` · [GitHub](https://github.com/n374500601) |
 
-## Project
+## Working direction
 
-This repository starts as a minimal Godot 4.7.2-stable project:
+Nothing is locked yet. The strongest ideas so far lean toward a dreamy, nostalgic, visually driven experience with a simple interaction—for example, a wind-up music box that rewinds part of its world, or a compact visual puzzle.
 
-- 1280×720 desktop viewport
-- GL Compatibility renderer
-- Empty `Main.tscn` startup scene
+Before building deeply, agree on:
 
-No gameplay, audio, provided theme recording, generated art, or AI-generated assets are included yet.
+- the player’s one main action;
+- what changes when that action succeeds or fails; and
+- the smallest complete version we can play in a day.
+
+## Jam essentials
+
+- **Jam dates:** October 24–November 7, 2026. Submissions close November 7 at 23:59 PT.
+- **Team size:** Three people, within the five-person limit.
+- **Final submission:** One game, through one platform, with a Windows or macOS build.
+- **Credits:** Add every contributor to the final itch.io submission.
+- **Assets:** Use work we own or assets with appropriate licenses.
+
+Read the full, current [official jam rules and FAQ](https://itch.io/jam/thatgamejam02) before submission.
+
+## AI and asset disclosure
+
+AI-assisted research, translation, or coding may be used where helpful. If AI-generated material appears in the final game, we will clearly disclose what was generated and how it was used on the game’s description page.
+
+The supplied theme recording is optional. If used, it must stay unmodified and be used only inside this jam entry—no remixing, sampling, or rearranging.
+
+## Project structure
+
+```text
+Main.tscn       Empty startup scene
+project.godot   Godot project and desktop display settings
+```
+
+There is no gameplay, audio, provided theme recording, generated art, or AI-generated asset in the repository yet.
+
+## Working agreement
+
+- Keep the scope small enough to test quickly.
+- Check in before replacing another teammate’s work.
+- Preserve editable source files alongside exported game assets.
+- Before final upload, test the intended build and confirm the credits, roster, licenses, and any required AI disclosure.
 
 ## Rights and licensing
 
-No license is granted for this repository. All rights to the code and team-created assets are reserved by their respective creators unless the team publishes a license later.
+No license is granted for this repository. Code and team-created assets remain the property of their respective creators unless the team later publishes a license.
+
