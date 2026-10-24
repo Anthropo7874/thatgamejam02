@@ -1,0 +1,20 @@
+# Godot editor and imported-resource state
+.godot/
+.import/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Exported builds and packages
+/builds/
+*.pck
+*.zip
+*.dmg
+*.app/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
